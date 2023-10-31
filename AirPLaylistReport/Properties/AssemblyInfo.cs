@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("AirPLaylistReport")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("dsg")]
 [assembly: AssemblyProduct("AirPLaylistReport")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]

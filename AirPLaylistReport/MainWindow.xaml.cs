@@ -21,6 +21,7 @@ namespace AirPLaylistReport
         int numberfiles;
         string[] path;
 
+
         private void OnLoad (object sender, EventArgs e) 
         {
            
@@ -30,9 +31,10 @@ namespace AirPLaylistReport
         {
             try
             {
+                var desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
                 OpenFileDialog fileDialog = new OpenFileDialog();
                 fileDialog.Filter = "Air Playlist | *.MCRlist";   // Фильтр расширения файлов
-                fileDialog.InitialDirectory = @"D:\Projects\ProjectC\Playlist";           // Директория по умолчанию
+                fileDialog.InitialDirectory = desktopPath;        //@"D:\Projects\ProjectC\Playlist";           // Директория по умолчанию
                 fileDialog.Title = "Выбери Air Playlist файл(ы)";
                 fileDialog.Multiselect = true;
 
@@ -73,13 +75,14 @@ namespace AirPLaylistReport
         {
             string idmainplaylist = "";
             string iddeleteplaylist = "";
+            var desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
             SaveFileDialog fileDialog = new SaveFileDialog();
             fileDialog.Filter = "Air Playlist| *.MCRlist";   // Фильтр расширения файлов
-            fileDialog.InitialDirectory = @"D:\Projects\ProjectC\Playlist";           // Директория по умолчанию
+            fileDialog.InitialDirectory = desktopPath;       //@"D:\Projects\ProjectC\Playlist";           // Директория по умолчанию
             fileDialog.Title = "Выбери файл для сохранения";
-            fileDialog.FileName = "WeekPlaylist.MCRlist"; //Название файла по умолчанию
-            fileDialog.DefaultExt = "MCRlist"; // Расширение файла по умолчанию
+            fileDialog.FileName = "WeekPlaylist.MCRlist";    //Название файла по умолчанию
+            fileDialog.DefaultExt = "MCRlist";               // Расширение файла по умолчанию
 
             bool? success = fileDialog.ShowDialog();
             if (success == true)
