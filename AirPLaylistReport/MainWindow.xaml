@@ -6,12 +6,12 @@
         Loaded="OnLoad"
         xmlns:local="clr-namespace:AirPLaylistReport"
         mc:Ignorable="d"
-        Title="Air Playlist Export" Height="500" Width="450" Icon="/Resource/Icon1.ico" WindowStartupLocation="CenterScreen">
-    <Grid Background="White">
-        <Button x:Name="btnOpen" Content="Открыть файлы" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="btnOpen_Click"/>
+        Title="Air Playlist Export" Height="500" Width="450" Icon="/Resource/Icon1.ico" WindowStartupLocation="CenterScreen" Background="#FF727173">
+    <Grid Background="#FF727173">
+        <Button x:Name="btnOpen" Content="Открыть файлы" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="btnOpen_Click"/>
         <Button x:Name="btnExport" Content="Объединить" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Height="41" Width="148" Click="Button_Click"/>
-        <ListBox x:Name="listbox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="88,141,88,114" SelectionChanged="ListBox_SelectionChanged"/>
-        <Label Content="Выбери файлы Air Playlist" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" Width="150" BorderBrush="#FFF11D1D" Background="White"/>
+        <ListBox x:Name="listbox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="88,141,88,114" SelectionChanged="ListBox_SelectionChanged" Background="#FFC7C4C4" BorderBrush="#FF383838"/>
+        <Label Content="Выбери файлы Air Playlist" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" Width="150" BorderBrush="#FFF11D1D" Background="#FF727173"/>
 
     </Grid>
 </Window>

@@ -22,6 +22,7 @@ namespace AirPLaylistReport
     {
 
        public static MainWindow Playlist;
+       public static Xdcam XdcamConvert;
         public StartWindow()
         {
             InitializeComponent();
@@ -39,6 +40,12 @@ namespace AirPLaylistReport
 
             //}
             //else { Playlist.Activate(); }
+        }
+
+        private void btnXdcam_Click(object sender, RoutedEventArgs e)
+        {
+            XdcamConvert = new Xdcam();
+            XdcamConvert.ShowDialog();
         }
     }
 }
