@@ -47,5 +47,10 @@ namespace AirPLaylistReport
             XdcamConvert = new Xdcam();
             XdcamConvert.ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

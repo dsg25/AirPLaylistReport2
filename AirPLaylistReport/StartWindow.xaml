@@ -9,6 +9,7 @@
     <Grid>
         <Button x:Name="btnPlaylist" Content="Объеденить плэйлисты" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="162" Height="31" Click="btnPlaylist_Click"/>
         <Button x:Name="btnXdcam" Content="Подготовить XDCAM файлы" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" Width="162" Height="31" Click="btnXdcam_Click"/>
+        <Button Content="ВЫХОД" HorizontalAlignment="Center" Margin="0,347,0,0" VerticalAlignment="Top" Height="26" Width="104" FontFamily="Arial Black" Background="#FFFB1212" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

@@ -7,20 +7,17 @@
         mc:Ignorable="d"
         Title="Xdcam Prepare" Height="500" Width="450" WindowStartupLocation="CenterScreen" Background="#FF727173">
     <Grid>
-        <Button Content="Выбрать папку" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Height="48" Width="162" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFB9D9ED" BorderBrush="Black">
+        <Button Content="Выбрать папку" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Height="48" Width="162" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFB9D9ED" BorderBrush="Black" Click="Button_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button Content="Старт" Margin="144,358,144,0" VerticalAlignment="Top" Height="48" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFCBEDB9" BorderBrush="Black">
+        <Button Content="Старт" Margin="144,295,144,0" VerticalAlignment="Top" Height="48" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFCBEDB9" BorderBrush="Black" Click="Button_Click_1">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBlock HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="50" Width="286" Foreground="White">
-            <TextBlock.Effect>
-                <DropShadowEffect/>
-            </TextBlock.Effect>
-        </TextBlock>
+        <TextBlock x:Name="Textblock1" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="286" Foreground="White" TextAlignment="Center"/>
+        <Button Content="ВЫХОД" HorizontalAlignment="Center" Margin="0,419,0,0" VerticalAlignment="Top" Height="26" Width="104" FontFamily="Arial Black" Background="#FFFB1212" Click="Button_Click_2"/>
     </Grid>
 </Window>

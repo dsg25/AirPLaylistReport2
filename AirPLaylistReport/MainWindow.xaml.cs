@@ -166,16 +166,21 @@ namespace AirPLaylistReport
             }
         }
         
-        void StartAir()
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = @"C:\REC\Playlist\Пятница.MCRlist";
-            p.Start();
-        }
+        //void StartAir()
+        //{
+        //    System.Diagnostics.Process p = new System.Diagnostics.Process();
+        //    p.StartInfo.FileName = @"C:\REC\Playlist\Пятница.MCRlist";
+        //    p.Start();
+        //}
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
