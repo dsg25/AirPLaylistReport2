@@ -176,5 +176,21 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Off_black.png" />
+    <Resource Include="Resource\Off_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\1_mergeplaylist.png" />
+    <Resource Include="Resource\2_readyxdcam.png" />
+    <Resource Include="Resource\3_openfiles.png" />
+    <Resource Include="Resource\4_merge.png" />
+    <Resource Include="Resource\5_choosefolder.png" />
+    <Resource Include="Resource\5_start.png" />
+    <Resource Include="Resource\Screen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
