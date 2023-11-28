@@ -128,18 +128,29 @@
         <Grid>
 
 
-            <Button Content="Выбрать папку" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Height="48" Width="162" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFB9D9ED" BorderBrush="Black" Click="Button_Click">
-                <Button.Effect>
-                    <DropShadowEffect/>
-                </Button.Effect>
+            <Button Style="{DynamicResource Button_mouseover}" x:Name="btnOpen" Content="" BorderThickness="0" BorderBrush="Transparent" Margin="25,57,21,0" VerticalAlignment="Top" Height="48" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resource/5_choosefolder.png"/>
+                </Button.Background>
             </Button>
-            <Button Content="Старт" Margin="144,295,144,0" VerticalAlignment="Top" Height="48" FontSize="14" FontFamily="Arial" FontWeight="Bold" Background="#FFCBEDB9" BorderBrush="Black" Click="Button_Click_1">
-                <Button.Effect>
-                    <DropShadowEffect/>
-                </Button.Effect>
+
+            <Button Style="{DynamicResource Button_mouseover}" x:Name="btnExport" Content="" BorderThickness="0" BorderBrush="Transparent" Margin="24,0,22,75" Height="48" VerticalAlignment="Bottom" Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resource/5_start.png"/>
+                </Button.Background>
             </Button>
-            <TextBlock x:Name="Textblock1" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="286" Foreground="White" TextAlignment="Center"/>
-            <Button Content="ВЫХОД" HorizontalAlignment="Center" Margin="0,419,0,0" VerticalAlignment="Top" Height="26" Width="104" FontFamily="Arial Black" Background="#FFFB1212" Click="Button_Click_2"/>
+
+            <Button Style="{DynamicResource CloseButton}" Content="" BorderThickness="0" BorderBrush="Transparent" Margin="87,347,87,0" VerticalAlignment="Top" Height="40" FontFamily="Arial Black" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resource/Off_red.png"/>
+                </Button.Background>
+            </Button>
+
+            <TextBlock x:Name="Textblock1" Foreground="White" Margin="20,0,20,0" TextWrapping="Wrap" TextAlignment="Center" Height="70" VerticalAlignment="Center" FontFamily="Microsoft YaHei UI">
+                <TextBlock.Background>
+                    <ImageBrush ImageSource="/Resource/Screen.png"/>
+                </TextBlock.Background>
+            </TextBlock>
         </Grid>
     </Border>
 </Window>

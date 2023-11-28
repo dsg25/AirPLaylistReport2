@@ -138,7 +138,7 @@
                 </Button.Background>
             </Button>
 
-            <Button Style="{DynamicResource Button_mouseover}" x:Name="btnExport" Content="" BorderThickness="0" BorderBrush="Transparent" Margin="25,0,25,75" Click="Button_Click" Height="48" VerticalAlignment="Bottom">
+            <Button Style="{DynamicResource Button_mouseover}" x:Name="btnExport" Content="" BorderThickness="0" BorderBrush="Transparent" Margin="25,0,25,75" Height="48" VerticalAlignment="Bottom" Click="Button_Click" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Resource/4_merge.png"/>
                 </Button.Background>
