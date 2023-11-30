@@ -15,15 +15,11 @@ using System.Windows.Shapes;
 namespace AirPLaylistReport
 {
     /// <summary>
-    /// Логика взаимодействия для StartWindow.xaml
+    /// Логика взаимодействия для MainWindowNew.xaml
     /// </summary>
-    public partial class StartWindow : Window
-
+    public partial class MainWindowNew : Window
     {
-
-       public static MainWindow Playlist;
-       public static Xdcam XdcamConvert;
-        public StartWindow()
+        public MainWindowNew()
         {
             InitializeComponent();
         }
@@ -33,29 +29,19 @@ namespace AirPLaylistReport
             DragMove();
         }
 
-        private void btnPlaylist_Click(object sender, RoutedEventArgs e)
-        {
-            Playlist = new MainWindow();
-            Playlist.ShowDialog();
-           
-            //if (Playlist == null)
-            //{
-            //    Playlist = new MainWindow();
-            //    Playlist.Show();
-
-            //}
-            //else { Playlist.Activate(); }
-        }
-
         private void btnXdcam_Click(object sender, RoutedEventArgs e)
         {
-            XdcamConvert = new Xdcam();
-            XdcamConvert.ShowDialog();
+
+        }
+
+        private void btnPlaylist_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Environment.Exit(0);
+
         }
     }
 }
