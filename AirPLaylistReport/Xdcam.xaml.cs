@@ -30,6 +30,11 @@ namespace AirPLaylistReport
 
         string selectpath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
+        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try

@@ -22,9 +22,15 @@ namespace AirPLaylistReport
         string[] path;
 
 
+
         private void OnLoad (object sender, EventArgs e) 
         {
            
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DragMove();
         }
 
         public void btnOpen_Click(object sender, RoutedEventArgs e)

@@ -35,6 +35,8 @@ namespace AirPLaylistReport
 
         private void btnPlaylist_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
+
             Playlist = new MainWindow();
             Playlist.ShowDialog();
            
@@ -49,6 +51,9 @@ namespace AirPLaylistReport
 
         private void btnXdcam_Click(object sender, RoutedEventArgs e)
         {
+
+            this.Hide();
+
             XdcamConvert = new Xdcam();
             XdcamConvert.ShowDialog();
         }
