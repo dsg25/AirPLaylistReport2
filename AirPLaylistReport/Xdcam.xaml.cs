@@ -29,6 +29,7 @@ namespace AirPLaylistReport
         }
 
         string selectpath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+        
 
         private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
@@ -37,16 +38,20 @@ namespace AirPLaylistReport
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+           try
             {
+               
                 var dialog = new VistaFolderBrowserDialog();
                 dialog.Description = "Выбери папку.";
                 dialog.UseDescriptionForTitle = true;
-                dialog.RootFolder = Environment.SpecialFolder.Desktop; //Environment.SpecialFolder.DesktopDirectory;
-                
+                dialog.RootFolder = Environment.SpecialFolder.DesktopDirectory; //Environment.SpecialFolder.Desktop; //
+
+
                 if ((bool)dialog.ShowDialog(this))
                 {
+
                     selectpath = dialog.SelectedPath;
+
                     Textblock1.Text = selectpath;
                 }
 
@@ -55,7 +60,7 @@ namespace AirPLaylistReport
 
             catch (Exception error)
             {
-               MessageBox.Show(error.Message);
+                MessageBox.Show(error.Message);
             }
         }
 
